@@ -1,8 +1,13 @@
 //* 1. global settings
+@import './global-settings/global';
+@import './global-settings/normalize';
+@import './global-settings/variables';
 
 //* 2. utils
+@import './utils/mixin';
 
 //* 3. components
+@import './components/container';
 
 //* 4. partials
 @import './partitals/footer';
