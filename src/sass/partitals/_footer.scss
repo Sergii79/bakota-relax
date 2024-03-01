@@ -11,10 +11,28 @@
     }
   }
 
+  &__navigation__menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    // align-items: center;
+  }
+
+  &__navigation__item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+
+    color: var(--footer-text-color);
+  }
+
   &__text {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-top: 20px;
 
     font-weight: 400;
     font-size: 14px;
