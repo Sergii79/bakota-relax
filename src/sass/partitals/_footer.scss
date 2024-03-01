@@ -11,20 +11,33 @@
     }
   }
 
-  &__navigation__menu {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+  &__navigation {
+    &__menu {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
 
-    // align-items: center;
-  }
+    &__item {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(16 / 14);
 
-  &__navigation__item {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(16 / 14);
+      color: var(--black-light-text-color);
+    }
 
-    color: var(--footer-text-color);
+    &__link {
+      display: inline-block;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+        color: var(--accent-color);
+
+        text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+          0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      }
+    }
   }
 
   &__text {
@@ -38,7 +51,7 @@
     font-size: 14px;
     line-height: calc(16 / 14);
 
-    color: var(--footer-text-color);
+    color: var(--black-light-text-color);
 
     @include tablet {
       flex-direction: row;
@@ -74,7 +87,10 @@
       &:hover,
       &:focus {
         transform: scale(1.1);
-        color: var(--accent-color);
+        color: var(--accent-color-second);
+
+        text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+          0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       }
     }
 
