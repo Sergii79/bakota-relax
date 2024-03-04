@@ -21,12 +21,18 @@
     width: 100%;
     justify-content: flex-end;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
+
+    @include tablet {
+      gap: 25px;
+    }
+
+    @include desktop {
+      gap: 35px;
+    }
   }
 
   &__link {
-    // display: inline-block;
-
     &:hover,
     &:focus {
       transform: scale(1.1);
@@ -53,6 +59,7 @@
     @include desktop {
       margin-top: 30px;
     }
+
     &-wrap {
       position: relative;
 
