@@ -7,46 +7,63 @@
     <title>Bakota relax start</title>
     
     <script type="module" crossorigin src="/bakota-relax/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/bakota-relax/assets/index-9eb078f3.css">
+    <link rel="stylesheet" href="/bakota-relax/assets/index-418701c4.css">
   </head>
   <body>
     <div class="document__wrap">
       <header class="header">
-  <div class="container">
-    <div class="header__logo">
-      <a href="./index.html" class="header__logo-link link">
-        <div class="header__menu-wrap">
-          <img
-            src="/bakota-relax/assets/logo-47656b38.svg"
-            alt="logo"
-            width="300"
-            height="300"
-          />
-
-          <svg class="header__logo-svg" width="300" height="300">
-            <use href="/bakota-relax/assets/sprite-b81adf62.svg#bakota-relax"></use>
-          </svg>
-
-          <span class="header__logo-name">Moon filmoteka</span>
-        </div>
-      </a>
-    </div>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="./page-2.html" class="nav-link">Page 2</a>
+  <div class="container header__general">
+    <nav class="header__menu">
+      <div class="header__logo">
+        <a class="header__logo-link link" href="./index.html">
+          <div class="header__menu-wrap">
+            <img
+              src="/bakota-relax/assets/logo-47656b38.svg"
+              alt="logo"
+              width="200"
+              height="200"
+            />
+            <!-- <svg class="header__logo-svg" width="300" height="300">
+              <use href="./images/icons/sprite.svg#bakota-relax"></use>
+            </svg> -->
+          </div>
+        </a>
+      </div>
+      <ul class="header__list">
+        <li class="header__list-item">
+          <a href="./page-2.html" class="header__link">Інформація</a>
         </li>
-
-        <li class="nav-item">
-          <a href="./page-3.html" class="nav-link">Page 3</a>
+        <li class="header__list-item">
+          <a href="./page-3.html" class="header__link">Блоґ</a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__link">Кабінет</a>
         </li>
       </ul>
     </nav>
+    <form class="header__form">
+      <div class="header__form-wrap">
+        <input
+          class="header__form-input"
+          type="text"
+          name="info-search"
+          placeholder="Пошук інформації"
+          required
+        />
+        <button class="header__form-button" type="submit" aria-label="search">
+          <svg class="header__logo-svg" width="12" height="12">
+            <use href="/bakota-relax/assets/sprite-ccbf32f0.svg#search-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
   </div>
 </header>
 
       <main class="main">
-  <h1>Example page title</h1>
+  <div class="container header__general">
+    <h1>Контент</h1>
+  </div>
 </main>
 
       <footer class="footer">
@@ -73,7 +90,7 @@
         <span>Developed by</span>
         <span class="footer__second-hero js-modal-open">
           <svg class="footer__second-hero-color" width="22" height="22">
-            <use href="/bakota-relax/assets/sprite-b81adf62.svg#TS" fill="#ff001b"></use>
+            <use href="/bakota-relax/assets/sprite-ccbf32f0.svg#TS" fill="#ff001b"></use>
           </svg>
           <!-- <svg
             viewBox="0 0 32 32"
