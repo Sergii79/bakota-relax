@@ -1,33 +1,48 @@
 <header class="header">
-  <div class="container">
-    <div class="header__logo">
-      <a href="./index.html" class="header__logo-link link">
-        <div class="header__menu-wrap">
-          <img
-            src="./images/icons/logo.svg"
-            alt="logo"
-            width="300"
-            height="300"
-          />
-
-          <svg class="header__logo-svg" width="300" height="300">
-            <use href="./images/icons/sprite.svg#bakota-relax"></use>
-          </svg>
-
-          <span class="header__logo-name">Moon filmoteka</span>
-        </div>
-      </a>
-    </div>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="./page-2.html" class="nav-link">Page 2</a>
+  <div class="container header__general">
+    <nav class="header__menu">
+      <div class="header__logo">
+        <a class="header__logo-link link" href="./index.html">
+          <div class="header__menu-wrap">
+            <img
+              src="./images/icons/logo.svg"
+              alt="logo"
+              width="200"
+              height="200"
+            />
+            <!-- <svg class="header__logo-svg" width="300" height="300">
+              <use href="./images/icons/sprite.svg#bakota-relax"></use>
+            </svg> -->
+          </div>
+        </a>
+      </div>
+      <ul class="header__list">
+        <li class="header__list-item">
+          <a href="./page-2.html" class="header__link">Інформація</a>
         </li>
-
-        <li class="nav-item">
-          <a href="./page-3.html" class="nav-link">Page 3</a>
+        <li class="header__list-item">
+          <a href="./page-3.html" class="header__link">Блоґ</a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__link">Кабінет</a>
         </li>
       </ul>
     </nav>
+    <form class="header__form">
+      <div class="header__form-wrap">
+        <input
+          class="header__form-input"
+          type="text"
+          name="info-search"
+          placeholder="Пошук інформації"
+          required
+        />
+        <button class="header__form-button" type="submit" aria-label="search">
+          <svg class="header__logo-svg" width="12" height="12">
+            <use href="./images/icons/sprite.svg#search-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
   </div>
 </header>
